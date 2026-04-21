@@ -1,6 +1,149 @@
 export const myProjects = [
   {
     id: 1,
+    title: "DocSense: AI-Powered Corporate Policy Assistant",
+    description:
+      "A full-stack Retrieval-Augmented Generation (RAG) application that enables users to query complex corporate documents in plain English and receive accurate, source-cited answers.",
+    subDescription: [
+      "Engineered a robust RAG pipeline using FastAPI, Groq's Llama 3.1 8B model, and ChromaDB for efficient vector storage and semantic search.",
+      "Built a modern, responsive frontend utilizing Next.js 16, React 19, and Tailwind CSS v4 to deliver a conversational interface with an integrated PDF viewer.",
+      "Implemented conversational memory and relevance confidence scoring using sentence-transformers (all-MiniLM-L6-v2) for context-aware, highly accurate responses.",
+      "Secured the platform with JWT authentication, Argon2 password hashing, and SQLite to enable safe, multi-organization document management and session isolation.",
+    ],
+    href: "https://github.com/asadii-01/DocSense",
+    image: "/assets/projects/docSense.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/logos/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
+      },
+      {
+        id: 3,
+        name: "ChromaDB",
+        path: "/assets/logos/chromadb.svg",
+      },
+      {
+        id: 4,
+        name: "SQLite",
+        path: "/assets/logos/sqlite.svg",
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    title: "SocraticCanvas: AI Generative Debate Platform",
+    description:
+      "An interactive educational platform that transforms passive learning into real-time intellectual debates using distinct AI personas and automated evaluation.",
+    subDescription: [
+      "Architected a FastAPI backend integrating Groq's Llama 3.3 70B to power dynamic historical personas and a specialized three-judge AI evaluation system.",
+      "Implemented Server-Sent Events (SSE) for real-time AI response streaming, coupled with Kokoro TTS and Web Speech API for seamless voice I/O.",
+      "Led end-to-end development and deployment, connecting a Next.js frontend with SQLite and JWT authentication to securely manage users and debate history.",
+      "Engineered the automated generation of personalized 'Gap Reports' to provide students with actionable feedback on logic, evidence, and rhetoric.",
+    ],
+    href: "https://gen-ai-hackathon-sigma.vercel.app/",
+    image: "/assets/projects/socratic-canvas.webp",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/logos/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
+      },
+      {
+        id: 3,
+        name: "Groq",
+        path: "/assets/logos/groq.svg",
+      },
+      {
+        id: 4,
+        name: "SQLite",
+        path: "/assets/logos/sqlite.svg",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "SubFlow: Subscription Management SaaS",
+    description:
+      "A full-stack SaaS dashboard designed to help freelancers centralize, track, and analyze their software subscription expenses and client billing.",
+    subDescription: [
+      "Developed a high-performance frontend using Next.js 14 (App Router), TypeScript, and Tailwind CSS to deliver an intuitive user dashboard.",
+      "Built a secure backend API with Node.js, Express, and MongoDB, implementing JWT authentication to protect user data and sessions.",
+      "Engineered visual analytics to track ongoing spend and implemented an automated alert system to notify users of upcoming subscription renewals.",
+      "Created a client-mapping feature to tie tool expenses to specific projects for profitability tracking, alongside an integrated invoice storage hub.",
+    ],
+    href: "https://subflow-frontend.vercel.app/",
+    image: "/assets/projects/subflow.webp",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/logos/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "Tailwind CSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "Express.Js",
+        path: "/assets/logos/expressjs.svg",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Browser Fingerprinting Application",
+    description:
+      "A client-server application designed to generate and analyze unique browser fingerprints for user identification and tracking purposes.",
+    subDescription: [
+      "Developed a client-side application using JavaScript to collect browser attributes and generate unique fingerprints.",
+      "Implemented a server-side application with Node.js and Express to receive, process, and store fingerprint data.",
+      "Utilized Web APIs and JavaScript libraries to extract browser characteristics such as user agent, screen resolution, and installed plugins.",
+      "Utilized MongoDB for efficient data storage and retrieval.",
+    ],
+    href: "https://fingerprint-client-test.netlify.app/",
+    image: "/assets/projects/fingerprint-app.jpeg",
+    tags: [
+      {
+        id: 1,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
+      },
+      {
+        id: 2,
+        name: "Express",
+        path: "/assets/logos/expressjs.svg",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
+      },
+    ],
+  },
+
+  {
+    id: 5,
     title: "TuneItIn - Web-based Music Player",
     description:
       "A fully functional web music player that allows users to stream and manage their music collections online with cloud storage support.",
@@ -37,39 +180,7 @@ export const myProjects = [
   },
 
   {
-    id: 2,
-    title: "Browser Fingerprinting Application",
-    description:
-      "A client-server application designed to generate and analyze unique browser fingerprints for user identification and tracking purposes.",
-    subDescription: [
-      "Developed a client-side application using JavaScript to collect browser attributes and generate unique fingerprints.",
-      "Implemented a server-side application with Node.js and Express to receive, process, and store fingerprint data.",
-      "Utilized Web APIs and JavaScript libraries to extract browser characteristics such as user agent, screen resolution, and installed plugins.",
-      "Utilized MongoDB for efficient data storage and retrieval.",
-    ],
-    href: "https://fingerprint-client-test.netlify.app/",
-    image: "/assets/projects/fingerprint-app.jpeg",
-    tags: [
-      {
-        id: 1,
-        name: "Node.js",
-        path: "/assets/logos/nodejs.svg",
-      },
-      {
-        id: 2,
-        name: "Express",
-        path: "/assets/logos/expressjs.svg",
-      },
-      {
-        id: 3,
-        name: "MongoDB",
-        path: "/assets/logos/mongodb.svg",
-      },
-    ],
-  },
-
-  {
-    id: 3,
+    id: 6,
     title: "SocialConnect – Real-Time Social Media Platform",
     description:
       "A full-stack social media application enabling users to create multimedia posts, interact in real-time through likes and comments, and build a social network with friend requests.",
@@ -112,7 +223,7 @@ export const myProjects = [
   },
 
   {
-    id: 4,
+    id: 7,
     title: "Smart Waste Management System (WMS)",
     description:
       "A full-stack web application designed to streamline waste collection and disposal operations, enhancing efficiency and sustainability.",
@@ -144,97 +255,6 @@ export const myProjects = [
         id: 4,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-
-  {
-    id: 5,
-    title: "ACME Invoice Manager",
-    description:
-      "A modern full-stack invoicing application built with Next.js (App Router) and PostgreSQL, designed to showcase key concepts for building scalable web applications.",
-    subDescription: [
-      "Developed with Next.js App Router for efficient routing and server-side rendering.",
-      "Utilized PostgreSQL for reliable data storage and management.",
-      "Implemented user authentication and authorization for secure access.",
-      "Designed a responsive and intuitive user interface with Tailwind CSS.",
-    ],
-    href: "https://acme-invoice-manager.vercel.app/",
-    image: "/assets/projects/acme-invoice-manager.jpeg",
-    tags: [
-      {
-        id: 1,
-        name: "Next.js",
-        path: "/assets/logos/nextjs.svg",
-      },
-      {
-        id: 2,
-        name: "PostgreSQL",
-        path: "/assets/logos/postgresql.svg",
-      },
-      {
-        id: 3,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-
-  {
-    id: 6,
-    title: "Trio Consultancy – Promotional Website",
-    description:
-      "A responsive promotional website developed for a tech consultancy firm, showcasing services and company information.",
-    subDescription: [
-      "Collaborated with team members to design and implement a modern, user-friendly layout.",
-      "Developed using HTML, CSS, and JavaScript to ensure cross-device compatibility.",
-      "Integrated sections including Hero/Landing, About Us, Services Offered, and Contact Form.",
-      "Focused on clean design principles and smooth navigation for enhanced user experience.",
-    ],
-    href: "https://trio-consultancy.netlify.app/",
-    image: "/assets/projects/trio-consultancy.png",
-    tags: [
-      {
-        id: 1,
-        name: "HTML",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 3,
-        name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
-      },
-    ],
-  },
-
-  {
-    id: 7,
-    title: "Roll-a-Ball Game",
-    description:
-      "A simple 3D roll-a-ball game developed to learn game development fundamentals and Unity engine capabilities.",
-    subDescription: [
-      "Built using Unity to create an interactive and engaging gameplay experience.",
-      "Implemented player movement, collectibles, and score tracking mechanics.",
-      "Focused on learning core concepts such as physics, input handling, and game object management.",
-      "Designed simple UI elements to display scores and game status.",
-    ],
-    href: "",
-    image: "/assets/projects/roll-a-ball.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Unity",
-        path: "/assets/logos/unity.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
       },
     ],
   },
@@ -358,4 +378,3 @@ export const reviews = [
     img: "https://robohash.org/hamza_codes",
   },
 ];
-
